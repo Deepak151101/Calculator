@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body class="bg">
+    <div class="container">
+        <h1><span class="heading">Calculator</span></h1>
+        <form>
+            <div class="displayField">  
+                <!-- <input type="historyText" id="history" disabled /> -->
+                <br>
+                <input type="text" id="result" disabled />
+            </div>  
+            <div class="bt">
+                <input type="button" class="btn" value="1" onclick="document.getElementById('result').value+='1'"/>
+                <input type="button" class="btn" value="2" onclick="document.getElementById('result').value+='2'"/>
+                <input type="button" class="btn" value="3" onclick="document.getElementById('result').value+='3'"/>
+                <input type="button" class="btn" value="+" onclick="document.getElementById('result').value+='+'"/>
+                <br />
+                <input type="button" class="btn" value="4" onclick="document.getElementById('result').value+='4'"/>
+                <input type="button" class="btn" value="5" onclick="document.getElementById('result').value+='5'"/>
+                <input type="button" class="btn" value="6" onclick="document.getElementById('result').value+='6'"/>
+                <input type="button" class="btn" value="-" onclick="document.getElementById('result').value+='-'"/>
+                <br />
+                <input type="button" class="btn" value="7" onclick="document.getElementById('result').value+='7'"/>
+                <input type="button" class="btn" value="8" onclick="document.getElementById('result').value+='8'"/>
+                <input type="button" class="btn" value="9" onclick="document.getElementById('result').value+='9'"/>
+                <input type="button" class="btn" value="*" onclick="document.getElementById('result').value+='*'"/>
+                <br />
+                <input type="button" class="btn" value="." onclick="document.getElementById('result').value+='.'"/>
+                <input type="button" class="btn" value="0" onclick="document.getElementById('result').value+='0'"/>
+                <input type="button" class="btn" id="delete" value="DEL"/>
+                <input type="button" class="btn" value="/" onclick="document.getElementById('result').value+='/'"/>
+                <br>
+                <input type="button" class="btn" value="(" onclick="document.getElementById('result').value+='('"/>
+                <input type="button" class="btn" value=")" onclick="document.getElementById('result').value+=')'"/>
+                <input type="button" class="btn" id="ebtn" value="e" onclick="document.getElementById('result').value+='e'"/>
+                <input type="button" class="btn" id="pie" value="pi" onclick="document.getElementById('result').value+='&pi;'"/>
+                <br>
+                <input type="button" class="btn" id="clr" value="c" onclick="document.getElementById('result').value=''"/>
+                <input type="button" class="btn" id="modbtn" value="%" onclick="document.getElementById('result').value+='%'"/>
+                <input type="button" class="btn" value="√" onclick="document.getElementById('result').value**=1/2"/>
+                <!-- <input type="button" class="btn" id="equals" value="=" onclick="document.getElementById('result').value=eval(document.getElementById('result').value)"/> -->
+                <input type="button" class="btn" id="equals" value="="/>
+
+
+                <!-- <input type="button" class="btn" id="equals" value="=" onclick="document.getElementById('history').value=eval(document.getElementById('result').value)"/> -->
+                <!-- <input type="button" class="btn" id="equals" value="=" onclick="displayExp(); displayHist()"/> -->
+                <br />
+            </div>
+          </form>
+    </div>
+
+    <script src="calculator.js"></script>
+
+</body>
+</html>
